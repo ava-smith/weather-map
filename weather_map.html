@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Map</title>
+    <script src="js/keys.js"></script>
+    <script src="js/mapbox-geocoder-utils.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/weather_map.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <header class="container">
+        <div class="navbar row">
+        </div>
+    </header>
+    <main>
+        <div class="container map">
+            <div class="row" id="map"></div>
+            <div class="search-area row justify-end">
+                <div class="search">
+                    <input placeholder="Search by city..." type="text">
+                    <button id="search-button" type="submit">Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="weather-cards container">
+            <div class="temps row justify-space-between"></div>
+            <div class="forecast row justify-space-between"></div>
+        </div>
+    </main>
+</div>
+<script src="js/min-max-temps.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="js/weather_map.js"></script>
+</body>
+</html>

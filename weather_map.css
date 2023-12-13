@@ -1,0 +1,92 @@
+body {
+    background-color: #768A9E;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Public Sans', sans-serif;
+}
+
+header {
+    background-color: #30344c;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#map {
+    margin-bottom: 20px;
+    height: 20rem;
+    width: 60rem;
+}
+
+/*https://uiverse.io/Bodyhc/afraid-eel-42*/
+/* this is the search area and button */
+.search {
+    display: inline-block;
+    position: relative;
+}
+
+.search input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.search button[type="submit"] {
+    background-color: #4e99e9;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+/*============================================*/
+.top {
+    margin-bottom: unset;
+}
+
+.top-card {
+    background-color: #30344c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.bottom-card {
+    background-color: lightgrey;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.temp {
+    margin-bottom: unset;
+    margin-top: unset;
+}
+
+.min-max-line {
+    margin-top: unset;
+    margin-bottom: unset;
+}
+
+.top-description {
+    margin-top: unset;
+}
